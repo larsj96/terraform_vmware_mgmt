@@ -8,6 +8,7 @@ image:
     - '/usr/bin/env'
     - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
 before_script:
+  - export 
   - export VSPHERE_PASSWORD=${vsphere_password}
   - export VSPHERE_USER=${vsphere_user}
   - export VSPHERE_SERVER=${vsphere_server}
