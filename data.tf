@@ -1,14 +1,14 @@
-data "terraform_remote_state" "Homelabb-Fortigate" {
-  backend = "remote"
+# data "terraform_remote_state" "Homelabb-Fortigate" {
+#   backend = "remote"
 
-  config = {
-    organization = "lanilsen"
-    workspaces = {
+#   config = {
+#     organization = "lanilsen"
+#     workspaces = {
 
-      name = "Homelabb-Fortigate"
-    }
-  }
-}
+#       name = "Homelabb-Fortigate"
+#     }
+#   }
+# }
 
 data "vsphere_datacenter" "datacenter" {
   name = "datacenter"
