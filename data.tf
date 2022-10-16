@@ -14,6 +14,17 @@ data "vsphere_datacenter" "datacenter" {
   name = "datacenter"
 }
 
-locals {
-  vlans = data.terraform_remote_state.Homelabb-Fortigate.outputs
+
+data "vsphere_host" "hp3" {
+  name          = "hp3.mgmt.nilsen-tech.com"
+  datacenter_id = data.vsphere_datacenter.datacenter.id
 }
+
+data "vsphere_host" "hp2" {
+  name          = "hp2.mgmt.nilsen-tech.com"
+  datacenter_id = data.vsphere_datacenter.datacenter.id
+}
+
+# locals {
+#   vlans = data.terraform_remote_state.Homelabb-Fortigate.outputs
+# }
