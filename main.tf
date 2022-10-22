@@ -9,6 +9,5 @@ terraform {
 
 provider "vsphere" {
   # Configuration options
-
  allow_unverified_ssl =  var.allow_unverified_ssl
 }
