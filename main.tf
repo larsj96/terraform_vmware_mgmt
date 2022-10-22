@@ -5,6 +5,10 @@ terraform {
       version = "2.2.0"
     }
   }
+  backend "http" {
+  }
+
+  
 }
 
 provider "vsphere" {
