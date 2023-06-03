@@ -15,6 +15,7 @@ before_script:
   - export TF_HTTP_USERNAME=${username}
   - export TF_HTTP_PASSWORD=${password}
   - export TF_HTTP_ADDRESS=${state_address}
+  - export TFE_TOKEN=${TFE_TOKEN}
   - rm -rf .terraform
   - terraform --version
   - terraform init
