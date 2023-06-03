@@ -5,9 +5,17 @@ terraform {
       version = "2.2.0"
     }
   }
-  backend "http" {
+  cloud {
+    organization = "lanilsen"
+
+    workspaces {
+      name = "vmware_mgmt"
+    }
   }
 
+# backend "http" {
+  
+# }
   
 }
 
