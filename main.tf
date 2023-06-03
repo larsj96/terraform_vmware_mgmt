@@ -23,3 +23,7 @@ provider "vsphere" {
   # Configuration options
  allow_unverified_ssl =  var.allow_unverified_ssl
 }
+
+provider "tfe" {
+  # Add any required provider arguments here
+}
